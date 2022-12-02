@@ -25,7 +25,9 @@ struct HomeView: View {
                         }
                         Task {
                             await homeViewModel.getBooks(search: searchText)
+                            searchText = ""
                         }
+                        
                     }
                     
                 
